@@ -9,19 +9,19 @@ const Shop = () => {
     const [products, setProduct] = useState(first10);
 
     return (
-        
-        <div className = "shop-container">
+
+        <div className="shop-container">
             <div className="product-container">
-                
+
                 {
-                    products.map(pd => <Product product = {pd}></Product>)
+                    products.map(pd => <Product product={pd}></Product>)
                 }
-                
+
             </div>
             <div className="cart-container">
                 <h1>This is cart</h1>
             </div>
-            
+
         </div>
     );
 };
