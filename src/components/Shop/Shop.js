@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import fakeData from '../../fakeData';
 import './Shop.css';
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 
 const Shop = () => {
     //console.log(fakeData);
@@ -32,8 +33,7 @@ const Shop = () => {
 
             </div>
             <div className="cart-container">
-                <h1>This is cart</h1>
-            <h5> Order Summary: {cart.length}</h5>
+                <Cart cart ={cart} total = {cart.price}></Cart>
             </div>
 
         </div>
