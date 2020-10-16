@@ -5,19 +5,19 @@ import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 
 const Shop = () => {
-    //console.log(fakeData);
+    
     const first10 = fakeData.slice(0, 10);
     const [products, setProduct] = useState(first10);
     //cart
     const [cart, setCart] = useState([]);
 
     const handleProduct= (product) => {
-        //console.log("click")
+       
         const newCart = [...cart, product];
         setCart(newCart);
 
     }
-
+//here 
     return (
 
         <div className="shop-container">
